@@ -6,7 +6,7 @@ class Person
   end
   
   def talk
-    puts 'I can talk'
+    'I can talk'
   end
 
   def change(clothes, place='bathroom')
@@ -14,7 +14,16 @@ class Person
   end
 end
 
-p = Person.new('Thiago')
-p.name = p.name + ' Sousa Santos'
+class Programmer < Person
+  def talk
+    'I can talk 0 or 1'
+  end
+end
+
+p = Person.new('João Henrique')
 puts p.name
-puts p.change 'shirt'
+puts p.talk
+
+t = Programmer.new('Thiago Sousa Santos')
+puts t.name
+puts t.talk
