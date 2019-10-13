@@ -7,7 +7,7 @@ class Athlete < Person
   end
 
   def introduce
-    puts "My name is #{@name}, I'm #{@age} years old, I'm #{@height} tall, I'm #{@sex} e I practice #{@sport}"
+    puts "My name is #{@name}, I'm #{@age} years old, I'm #{@height} tall, I'm #{@sex} and I practice #{@sport}"
   end
 
   def my_sport
